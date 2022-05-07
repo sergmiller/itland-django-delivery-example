@@ -1,0 +1,32 @@
+<head>
+    <title> Доставим Все!</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href='/static/style.css'>
+</head>
+
+<body>
+    <h2><a href='/index'> На главную <a/></h2> <br/>
+
+    <b> Сделать заказ </b>
+    <form action="/make_order" method="get">
+        <div>
+          <li> <label for="source"> Исходный пункт </label>
+          <input type="text" id="source" name="source" required> <br/>
+      
+          <li> <label for="target"> Конечный пункт </label>
+          <input type="text" id="target" name="target" required> <br/>
+      
+          <li> <label for="weight"> Вес посылки </label>
+          <input type="number" id='weight' name="weight" required> <br/>
+
+
+          <li> <label for="max_cost"> Максимальная цена </label>
+          <input type="number" id='max_cost' name="max_cost" required> <br/>
+        </div>
+
+      <div>
+          <button> Заказать </button>
+      </div>
+    </form>
+</body>
