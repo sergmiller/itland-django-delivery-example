@@ -7,9 +7,10 @@ Educational example of Django python project
 
 ```sh
 pip install django django-extensions
-python3 delivery/manage.py migrate
-python3 delivery/manage.py initialize
-python3 delivery/manage.py runserver
+cd delivery
+python3 manage.py migrate
+python3 manage.py initialize
+python3 manage.py runserver
 ```
 
 Сервис будет запущен по адресу http://127.0.0.1:8000/
